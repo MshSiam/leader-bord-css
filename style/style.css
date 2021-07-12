@@ -1,12 +1,13 @@
 /* common style */
 *{
-    margin: 0;
+    margin-left: 5px;
     padding:0 ;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f3f1ff;
+    
 }
 
 main{
@@ -32,6 +33,7 @@ hr{
     width: 870px;
     padding: 30px;
     margin-top: 21px;
+    margin-left: 80px;
     
 }
 
@@ -143,4 +145,50 @@ hr{
     padding: 5px;
     border-radius: 15px;
 }
+
+
+
+
+
+
+
+/*----------
+ responsive 
+ ----------*/
+
+
+/* mobile */
+
+@media only screen and (max-width:688px){
+
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+
+}
+
+/* Tablet */
+
+@media only screen and (min-width:688px) and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+}
+
 
