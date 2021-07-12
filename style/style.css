@@ -11,7 +11,8 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 hr{
@@ -30,6 +31,7 @@ hr{
     background-color: #fff;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
     
 }
 
@@ -103,3 +105,42 @@ hr{
     height: 117px;
     width: 117px;
 }
+
+
+
+
+/* Courses starts */
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-column-gap: 35px;
+}
+
+
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+
+.fa-star.filled{
+    color: rgb(223, 220, 61);
+}
+
+.fa-star.empty{
+    color: rgb(212, 212, 212);
+}
+
+.course-duration{
+    background-color: rgb(197, 155, 155);
+    color: crimson;
+    padding: 5px;
+    border-radius: 15px;
+}
+
